@@ -114,6 +114,12 @@
     #login #user,
     #login #password {
         margin-left: 24px;
+        display: none;
+
+    }
+
+    #login #user{
+        display: none;
     }
 
     #login input[type="submit"],
@@ -138,6 +144,8 @@
 
 
 }
+
+
 
 @media(max-width:885px) {
     #footer .wrap>div {
@@ -239,6 +247,8 @@
         width: 7%;
     }
 
+
+
 }
 
 @media(max-width:475px) {
@@ -257,6 +267,7 @@
 
     .card .icon {
         font-size: 35px;
+
     }
 
     .card:hover .icon {
@@ -317,3 +328,4 @@
 }
 
 }
+

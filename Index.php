@@ -21,32 +21,99 @@ if(isset($_POST['login'])){
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <title>Article edition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"" />
+    <title>Newsbate4</title>
     <link rel="icon" type="favicon/x-icon" href="../News/img/supertux.png" />
-   <link rel="stylesheet" href="css/styles.css?v=2">
-   <link rel="stylesheet" href="css/responsive.css?v=2">
+   <link rel="stylesheet" href="css/styles.css?v=1">
+   <link rel="stylesheet" href="css/responsive.css?v=1">
+   <style>
+/* Fondo global con imagen */
+body {
+    background: url('img/1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Capa oscura + blur */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: -1;
+}
+
+/* Contenedor centrado tipo login */
+.container-login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caja tipo glass */
+.box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Inputs */
+.box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+}
+
+/* Botón */
+.box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #506658;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.box button:hover {
+    background-color: #3e5146;
+}
+</style>
 
 </head>
 
 <body>
  
-    <header id="header">
-        <div class="wrap">
-            <div id="logo">
-                <span class="gear">S</span>
-                <h3>BLOG</h3>
-            </div>
-
-            <nav id="menu">
-                <ul>
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">FORMACION</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                </ul>
-            </nav>
+<header id="header">
+    <div class="wrap">
+        <div id="logo">
+            <span class="gear">S</span>
+            <h3>BLOG</h3>
         </div>
+
+        <nav id="menu">
+            <ul>
+                
+                <li><a href="blog.php">BLOG</a></li>
+               
+                <li><a href="contacto.php">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     </header>
  
@@ -55,51 +122,65 @@ if(isset($_POST['login'])){
     <section class="wrap">
         <section id="info">
 
-            <div id="banner">
-                <h1>Newbate v.02 (Beta) </h1>
-            </div>
+        <div id="banner">
+            <h1>Newsbate4 v.02 (Beta)</h1>
+        </div>
 
-            <div id="cards">
+        <div id="cards">
 
+            <a href="blog.php">
                 <div class="card">
                     <p class="icon">H</p>
-                    <H2 class="category">De este sitio</H2>
+                    <h2 class="category">De este sitio</h2>
                     <p class="description">
-                        Conoce con que este sitio fue desarollado y con que finalidad
+                        Conoce con que este sitio fue desarrollado y con que finalidad
+                    </p>
                 </div>
+            </a>
 
+            <a href="contacto.php">
                 <div class="card">
                     <p class="icon">_</p>
-                    <H2 class="category">Perfil del autor</H2>
+                    <h2 class="category">Perfil del autor</h2>
                     <p class="description">
-                        Conoce al autor detras del proyecto
+                        Conoce al autor detrás del proyecto
+                    </p>
                 </div>
+            </a>
 
+            <a href="#">
                 <div class="card">
                     <p class="icon">S</p>
-                    <H2 class="category">Under construction</H2>
+                    <h2 class="category">Under construction</h2>
                     <p class="description">
                         Men working
+                    </p>
                 </div>
+            </a>
 
+            <a href="#">
                 <div class="card">
                     <p class="icon">u</p>
-                    <H2 class="category">Rango de la pagina</H2>
+                    <h2 class="category">Rango de la pagina</h2>
                     <p class="description">
                         Ve el rango planeado de esta pagina
+                    </p>
                 </div>
+            </a>
 
+            <a href="contacto.php">
                 <div class="card">
                     <p class="icon">a</p>
-                    <H2 class="category">Trivia</H2>
+                    <h2 class="category">Trivia</h2>
                     <p class="description">
                         Contact me!
+                    </p>
                 </div>
+            </a>
 
-            </div>
+        </div>
 
-
-        </section>
+    </section>
   
         <div class="clearfix"></div>
         <aside id="lateral">
