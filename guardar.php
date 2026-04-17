@@ -1,14 +1,18 @@
 <?php
 include("conexion.php");
 
-$titulo = $_POST['titulo'];
-$contenido = $_POST['contenido'];
-$categoria = $_POST['categoria'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-$sql = "INSERT INTO articulos (titulo, contenido, categoria)
-        VALUES ('$titulo', '$contenido', '$categoria')";
+    $titulo = $_POST['titulo'];
+    $contenido = $_POST['contenido'];
+    $categoria = $_POST['categoria'];
 
-$conexion->query($sql);
+  
+    $conexion->query("INSERT INTO articulos (titulo, contenido, categoria) 
+    VALUES ('$titulo','$contenido','$categoria')");
 
-header("Location: index.php");
+   
+    header("Location: admin.php");
+    exit();
+}
 ?>

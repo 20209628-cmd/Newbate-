@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <title>Contacto</title>
 
-<!-- Bootstrap -->
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
-/* Color principal */
+
 .bg-ebony {
     background-color: #506658;
 }
@@ -28,18 +28,18 @@
     color: white;
 }
 
-/* Card */
+
 .card {
     border-left: 5px solid #506658;
 }
 
-/* Fondo */
+
 body {
     background: url('img/1.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
-/* Blur overlay */
+
 body::before {
     content: "";
     position: fixed;
@@ -53,7 +53,7 @@ body::before {
 </head>
 <body>
 
-<!-- Navbar -->
+
 <nav class="navbar bg-ebony mb-4">
     <div class="container-fluid">
         <span class="navbar-brand text-white">Contacto</span>

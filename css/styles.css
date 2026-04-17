@@ -32,9 +32,9 @@
     font-style: normal;
 }
 
-/* GENERALES */
 
-/* Selector universal para reiniciar padding y margin de todos los elementos */
+
+
 * {
     /* Elimina el padding por defecto de todos los elementos */
     padding: 0px;

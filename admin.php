@@ -13,11 +13,11 @@ include("conexion.php");
 <meta charset="UTF-8">
 <title>Panel Admin</title>
 
-<!-- Bootstrap CDN -->
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
-/* Color principal */
+
 .btn-ebony {
     background-color: #506658;
     color: #fff;
@@ -29,39 +29,39 @@ include("conexion.php");
     color: #fff;
 }
 
-/* Navbar personalizada */
+
 .navbar-ebony {
     background-color: #506658;
 }
 
-/* Cards */
+
 .card {
     border-left: 5px solid #506658;
 }
 
-/* Títulos */
+
 .text-ebony {
     color: #506658;
 }
 
-/* Cards con imagen de fondo */
+
 .card {
     border-left: 5px solid #506658;
     position: relative;
     overflow: hidden;
 }
 
-/* Imagen de fondo */
+
 .card::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: url('img/1.jpg') no-repeat center center;
+    background: url('img/green2.jpg') no-repeat center center;
     background-size: cover;
     opacity: 0.9;
 }
 
-/* Capa oscura para legibilidad */
+
 .card::after {
     content: "";
     position: absolute;
@@ -69,26 +69,26 @@ include("conexion.php");
     background: rgba(0, 0, 0, 0.5);
 }
 
-/* Contenido encima */
+
 .card-body {
     position: relative;
     z-index: 1;
     color: #fff;
 }
 
-/* Mantener títulos con color Ebony */
+
 .text-ebony {
     color: #ffffff !important;
 }
 
-/* Fondo global */
+
 body {
-    background: url('img/1.jpg') no-repeat center center fixed;
+    background: url('img/green2.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
 }
 
-/* Capa oscura para mejorar visibilidad */
+
 body::before {
     content: "";
     position: fixed;
@@ -97,23 +97,23 @@ body::before {
     z-index: -1;
 }
 
-/* Contenedor principal más limpio */
+
 .container {
     position: relative;
     z-index: 1;
 }
-/* Fondo con blur */
+
 body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4); /* oscurece un poco */
+    background: rgba(0, 0, 0, 0.4); 
     backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px); /* soporte Chrome/Safari */
+    -webkit-backdrop-filter: blur(8px); 
     z-index: -1;
 }
 
-/* Contenedor tipo glass */
+
 .container {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
@@ -127,7 +127,7 @@ body::before {
 </head>
 <body class="bg-light">
 
-<!-- Navbar -->
+
 <nav class="navbar navbar-ebony mb-4">
     <div class="container-fluid">
         <span class="navbar-brand text-white">Panel Admin</span>
@@ -137,7 +137,7 @@ body::before {
 
 <div class="container">
 
-    <!-- Botón crear -->
+   
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h2 class="text-ebony">Artículos</h2>
         <a href="crear.php" class="btn btn-ebony">Crear Artículo</a>
@@ -159,12 +159,15 @@ body::before {
                             <?php echo $row['contenido']; ?>
                         </p>
 
-                        <a href="editar.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">
-                            Editar
-                        </a>
-                        <a href="eliminar.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-danger">
-                            Eliminar
-                        </a>
+                       <a href="editar.php?id=<?php echo $row['id']; ?>" 
+   class="btn btn-warning btn-editar">
+   Editar
+</a>
+
+<a href="eliminar.php?id=<?php echo $row['id']; ?>" 
+   class="btn btn-danger btn-eliminar">
+   Eliminar
+</a>
                     </div>
                 </div>
             </div>

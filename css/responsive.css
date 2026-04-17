@@ -282,22 +282,22 @@
         width: 85%;
     }
 
-/* Forzar apilado en móviles pequeños */
+
 @media (max-width: 480px) {
 
-  /* asegúrate de que cubra tanto #footer .wrap > div como .info si usas esa clase */
+ 
   #footer .wrap > div,
   #footer .wrap > .info {
-    float: none !important;       /* quitar float */
-    display: block !important;    /* comportamiento en bloque */
-    clear: both !important;       /* asegurar que no queden al lado de nada */
-    width: calc(100% - 30px) !important; /* ocupar casi todo el ancho del contenedor */
-    margin: 15px auto !important; /* centrado vertical/horizontal */
+    float: none !important;       
+    display: block !important;    
+    clear: both !important;       
+    width: calc(100% - 30px) !important; 
+    margin: 15px auto !important; 
     box-sizing: border-box !important;
     height: auto !important;
   }
 
-  /* Contenedor wrap debe permitir crecimiento */
+  
   #footer .wrap {
     width: 90% !important;
     max-width: 100% !important;
@@ -305,13 +305,13 @@
     overflow: visible !important;
   }
 
-  /* Footer se adapta */
+  
   #footer {
     height: auto !important;
     padding-bottom: 30px !important;
   }
 
-  /* Ajustes para imágenes dentro de las cajas para que no se salgan */
+ 
   #footer img {
     max-width: 100% !important;
     height: auto !important;
@@ -319,9 +319,9 @@
     margin: 8px auto !important;
   }
 
-  /* Ajuste específico para los iconos navegadores si quieres apilarlos o reducirlos */
+  
   #footer #browsers img {
-    width: 45px !important; /* o usa % si prefieres */
+    width: 45px !important; 
     margin: 6px !important;
     display: inline-block !important;
   }

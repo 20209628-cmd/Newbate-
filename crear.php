@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <title>Crear Artículo</title>
 
-<!-- Bootstrap -->
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
-/* Color principal */
+
 .btn-ebony {
     background-color: #506658;
     color: white;
@@ -20,7 +20,7 @@
     color: white;
 }
 
-/* Header */
+
 .header-ebony {
     background-color: #506658;
     color: white;
@@ -28,18 +28,18 @@
     border-radius: 8px;
 }
 
-/* Card */
+
 .card {
     border-left: 5px solid #506658;
 }
-/* Fondo global */
+
 body {
     background: url('img/green2.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
 }
 
-/* Capa oscura para mejorar visibilidad */
+
 body::before {
     content: "";
     position: fixed;
@@ -48,23 +48,23 @@ body::before {
     z-index: -1;
 }
 
-/* Contenedor principal más limpio */
+
 .container {
     position: relative;
     z-index: 1;
 }
-/* Fondo con blur */
+
 body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4); /* oscurece un poco */
+    background: rgba(0, 0, 0, 0.4); 
     backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px); /* soporte Chrome/Safari */
+    -webkit-backdrop-filter: blur(8px); 
     z-index: -1;
 }
 
-/* Contenedor tipo glass */
+
 .container {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);

@@ -27,7 +27,7 @@ if(isset($_POST['login'])){
    <link rel="stylesheet" href="css/styles.css?v=1">
    <link rel="stylesheet" href="css/responsive.css?v=1">
    <style>
-/* Fondo global con imagen */
+
 body {
     background: url('img/1.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -36,7 +36,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Capa oscura + blur */
+
 body::before {
     content: "";
     position: fixed;
@@ -47,7 +47,7 @@ body::before {
     z-index: -1;
 }
 
-/* Contenedor centrado tipo login */
+
 .container-login {
     height: 100vh;
     display: flex;
@@ -55,7 +55,7 @@ body::before {
     align-items: center;
 }
 
-/* Caja tipo glass */
+
 .box {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
@@ -68,7 +68,7 @@ body::before {
     border: 1px solid rgba(255,255,255,0.2);
 }
 
-/* Inputs */
+
 .box input {
     width: 100%;
     padding: 10px;
@@ -77,7 +77,7 @@ body::before {
     border-radius: 6px;
 }
 
-/* Botón */
+
 .box button {
     width: 100%;
     padding: 10px;
@@ -123,7 +123,7 @@ body::before {
         <section id="info">
 
         <div id="banner">
-            <h1>Newsbate4 v.02 (Beta)</h1>
+            <h1>Newsbate4 v.02 </h1>
         </div>
 
         <div id="cards">
@@ -263,7 +263,7 @@ body::before {
         </section>
 
     </section>
-    <!--Pie de página-->
+    
     <div class="clearfix"></div>
     <footer id="footer">
         <div class="wrap">
